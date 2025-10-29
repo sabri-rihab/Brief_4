@@ -1,0 +1,188 @@
+/* PLANETS */
+.planet{
+    width: 100%;
+    max-width: 900px;
+    height: 700px;
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap :7px;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 30px auto;
+    position: relative;
+}
+.planet img {
+    align-self: center;
+    height: auto;
+    width: 40vw;
+    max-width: 520px;
+}
+.planet_moons, .planet_name{margin: 0;padding: 0;}
+.planet_name {
+    font-size: 49px;
+    color: white;
+    font-family: "Chakra Petch", sans-serif;
+    margin-top: 15px;
+}
+.planet_moons {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 24px;
+    color: white;
+}
+._3, ._4{padding: 0;margin: 0;}
+.planet .diametre ._1 {
+    color: rgba(255, 255, 255, 0.542);
+    rotate: 135deg;
+    height: 90px;
+    position: absolute;
+    left: 26%;
+    top: 25%;
+}
+.planet .dayLength ._1 {
+    color: rgba(255, 255, 255, 0.542);
+    rotate: 45deg;
+    height: 90px;
+    position: absolute;
+    left: 73%;
+    top: 25%;
+}
+.planet .temperature ._1 {
+    color: rgba(255, 255, 255, 0.542);
+    rotate: 45deg;
+    height: 90px;
+    position: absolute;
+    left: 25%;
+    top: 60%;
+}
+.planet .masse ._1 {
+    color: rgba(255, 255, 255, 0.542);
+    rotate: 135deg;
+    height: 90px;
+    position: absolute;
+    left: 75%;
+    top: 60%;
+}
+.planet .diametre ._2 {
+    color: rgba(255, 255, 255, 0.542);
+    rotate: 90deg;
+    height: 90px;
+    position: absolute;
+    left: 17.5%;
+    top: 20.5%;
+}
+.planet .dayLength ._2 {
+    color: rgba(255, 255, 255, 0.542);
+    rotate: 90deg;
+    height: 90px;
+    position: absolute;
+    left: 81.5%;
+    top: 20.5%;
+}
+.planet .temperature ._2 {
+    color: rgba(255, 255, 255, 0.542);
+    rotate: 90deg;
+    height: 90px;
+    position: absolute;
+    left: 16.5%;
+    top: 64.5%;
+}
+.planet .masse ._2 {
+    color: rgba(255, 255, 255, 0.542);
+    rotate: 90deg;
+    height: 90px;
+    position: absolute;
+    left: 83.5%;
+    top: 64.5%;
+}
+.planet .diametre ._3{
+    width: 13.07vw;
+    height: 8.5vw;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.266);
+    border-radius: 5px 0 5px 5px;
+    top: 18.5%;
+    left: -9.7%;
+    display: flex;
+}
+.planet .dayLength ._3{
+    width: 13.07vw;
+    display: flex;
+    height: 8.5vw;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.266);
+    border-radius: 0 5px 5px 5px;
+    top: 18.3%;
+    left: 86.67%;
+}
+.planet .temperature ._3{
+    width: 13.07vw;
+    height: 8.5vw;
+    display: flex;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.266);
+    border-radius: 5px 5px 0 5px;
+    top: 60.6%;
+    left: -10.8%;
+}
+.planet .masse ._3{
+    width: 13.07vw;
+    height: 8.5vw;
+    display: flex;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.266);
+    border-radius: 5px 5px 5px 0;
+    top: 60.7%;
+    left: 88.68%;
+}
+.planet .diametre ._4{
+    position: absolute;
+    height: 3.9vw;
+    width: 3.9vw;
+    border-bottom: 3.9vw solid transparent;
+    border-left: 3.9vw solid rgba(255, 255, 255, 0.266);
+    border-radius:0 5px 0 0;
+    top: 18.5%;
+    left: 12.58%;
+}
+.planet .dayLength ._4{
+    position: absolute;
+    height: 3.9vw;
+    width: 3.9vw;
+    border-bottom: 3.9vw solid transparent;
+    border-right: 3.9vw solid rgba(255, 255, 255, 0.266);
+    border-radius:5px 0 0 0;
+    top:18.3%;
+    left: 80%;
+}
+.planet .temperature ._4{
+    position: absolute;
+    height: 3.9vw;
+    width: 3.9vw;
+    border-right: 3.9vw solid transparent;
+    border-bottom: 3.9vw solid rgba(255, 255, 255, 0.266);
+    border-radius:0 0 5px 0;
+    top:70.67%;
+    left: 11.5%;
+}
+.planet .masse ._4{
+    position: absolute;
+    height: 3.9vw;
+    width: 3.9vw;
+    border-left: 3.9vw solid transparent;
+    border-bottom: 3.9vw solid rgba(255, 255, 255, 0.266);
+    border-radius:0 0 0 5px;
+    top:70.75%;
+    left: 82.07%;
+}
+._3 {display: flex; justify-content: center; align-items: center;}
+.planet ._3 p{
+  font-family: "Chakra Petch", sans-serif;
+  width: 180px;
+  font-size: clamp(8px, 1.9vw, 18px);
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.5;
+}
+

@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLANETS</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SpaceOdyssey Planets</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="planets.css">
+    <link rel="icon" type="image/png"href="images/.png">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
@@ -14,8 +16,8 @@
             justify-content: center;
         }
         .container{
-            width: calc(100% - 30px); 
-            min-height: 100vh;
+            width: 100%; 
+            /* min-height: 100vh; */
             background-image: url('images/home/background.png');
             background-size: cover;
             background-position: center;
@@ -25,9 +27,9 @@
             0%, 100%{background-size: 100%;}
             50%{background-size: 115%;}
         }
+        
         @media (max-width: 400px){
-            .container{width: calc(100% - 0px); 
-}
+            .container{width:100%;}
         }
     </style>
 </head>
@@ -38,20 +40,19 @@
             <div class="haut">
                 <img src="images/home/Logo.png" alt="#" class="logo">
                 <div class="right_side">
-                    <div class="search">
-                        <input type="text" placeholder="Search">
-                        <img src="images/home/search.png" alt="">
-                    </div>
-                    <div class="language">
-                        English
-                    </div>
+                    <select class="language">
+                        <option value="English">English</option>
+                        <option value="Français">Français</option>
+                        <option value="العربية">العربية</option>
+                    </select>
                     <div class="notification">
                         <img src="images/home/bell.png" alt="no image">
                         <span>0</span>
                     </div>
-                    <img class="profile" src="images/home/profile.png" alt="#">   
+                        <img class="profile" src="images/home/profile.png" alt="#"> 
+                        <img src="images/burger_menu.png" alt="#">  
                     </div>
-                </div>
+            </div>
                 
             <div class="nav_bar">
                 <ul>
@@ -631,6 +632,7 @@
                 <p class="planet_moons">1 MOON</p>
             </div>
         </section>
+        </div>
         <footer>
       <div class="container">
           <table>
@@ -675,7 +677,6 @@
           </div>
       </div>
     </footer>
-    </div>
     <!--  Footer  -->
 
 </body>

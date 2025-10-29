@@ -1,0 +1,93 @@
+/*  MISSION     */
+.ms_1{
+    background-image: url(images/missions/section_mission.png);
+    width: 100%;
+    height: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.ms_1 p{
+    color: white;
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+}
+.m_text{
+    display: flex;
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;
+}
+.ms_2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.ms_2 div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 20px;
+    width: 100%;
+    margin-top: 60px;
+    margin-left: 80px;
+}
+.ms_2 img{
+    height: 30px;
+    width: 30px;
+}
+
+.ms_2 p{
+    width: 900px;
+    font-family: "Averia Serif Libre", serif;
+    margin-top: 25px;
+    margin-left: 80px;
+}
+.ms_cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+}
+.ms_cards .card{
+    width: 420px;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 35px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    color: white;
+    background: black;
+    padding: 0;
+    margin: 0;
+}
+.ms_cards .card img{
+    width: 100%;
+    height: 300px;
+    border-radius: 35px 35px 0 0 ;
+}
+.ms_cards .card:hover {
+  /* transform: translateY(-5px); */
+  box-shadow: 0 0 35px #1e90ff;
+}
+.name_m{
+    font-family: "Averia Serif Libre", serif;
+    font-size: 45px;
+}
+
+.ms_cards .details{
+        width: 100%;
+    height: 200px;
+    padding-left: 20px;
+    display: flex;
+    grid: 20px;
+    flex-wrap: wrap;
+    margin-top: 0;
+    font-family: "Abel", sans-serif;
+    margin-bottom: 30px;
+}

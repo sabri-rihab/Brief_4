@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACT</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SpaceOdyssey Contact</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
   <!-- Nav_bar -->
@@ -12,20 +13,19 @@
     <div class="haut">
         <img src="images/home/Logo.png" alt="#" class="logo">
         <div class="right_side">
-            <div class="search">
-                <input type="text" placeholder="Search">
-                <img src="images/home/search.png" alt="">
-            </div>
-            <div class="language">
-                English
-            </div>
+            <select class="language">
+                <option value="English">English</option>
+                <option value="Français">Français</option>
+                <option value="العربية">العربية</option>
+            </select>
             <div class="notification">
                 <img src="images/home/bell.png" alt="no image">
                 <span>0</span>
             </div>
-            <img class="profile" src="images/home/profile.png" alt="#">   
+                <img class="profile" src="images/home/profile.png" alt="#"> 
+                <img class="burger_icon" src="images/burger_menu.png" alt="#">  
             </div>
-        </div>
+     </div>
         
     <div class="nav_bar">
         <ul>
@@ -42,93 +42,107 @@
     </div>
  </div>
 
-    <section class="contact">
-  <img src="images/contact.png" alt="no image" class="contactImg">
+<main>
+      <div class="container">
+        <div class="left-section">
+          <h1>Contact Us</h1>
+          <p class="subtitle">Say something to start a live chat!</p>
 
-  <div class="user_details">
-    <p class="title">Let's Get In Touch</p>
-    <p class="sub_title">
-      Or just reach out manually to 
-      <a href="#">spacex.exploration@contact.com</a>
-    </p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+1012 3456 789</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>demo@gmail.com</span>
+            </div>
+          </div>
+        </div>
 
-    <form class="contact_form">
-      <div class="input_group">
-        <label class="details">First Name</label>
-        <div class="input_box">
-          <img src="images/person.png" class="icon">
-          <input type="text" placeholder="enter your first name">
+        <div class="right-section">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+            </div>
+
+            <div class="subject-group">
+              <span class="subject-label">Select Subject?</span>
+              <div class="radio-group">
+                <div class="radio-item">
+                  <input
+                    type="radio"
+                    id="subject1"
+                    name="subject"
+                    value="general1"
+                    checked
+                  />
+                  <label for="subject1">General Inquiry</label>
+                </div>
+                <div class="radio-item">
+                  <input
+                    type="radio"
+                    id="subject2"
+                    name="subject"
+                    value="general2"
+                  />
+                  <label for="subject2">General Inquiry</label>
+                </div>
+                <div class="radio-item">
+                  <input
+                    type="radio"
+                    id="subject3"
+                    name="subject"
+                    value="general3"
+                  />
+                  <label for="subject3">General Inquiry</label>
+                </div>
+                <div class="radio-item">
+                  <input
+                    type="radio"
+                    id="subject4"
+                    name="subject"
+                    value="general4"
+                  />
+                  <label for="subject4">General Inquiry</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group full">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write your message.."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
         </div>
       </div>
+    </main>
 
-      <div class="input_group">
-        <label class="details">Last Name</label>
-        <div class="input_box">
-          <img src="images/person.png" class="icon">
-          <input type="text" placeholder="enter your last name">
-        </div>
-      </div>
-
-      <div class="input_group">
-        <label class="details">Email Address</label>
-        <div class="input_box">
-          <img src="images/email.png" class="icon">
-          <input type="email" placeholder="enter your email" required>
-        </div>
-      </div>
-
-      <div class="input_group">
-        <label class="details">Phone Number</label>
-        <div class="input_box">
-          <img src="images/phone.png" class="icon">
-          <input type="tel" placeholder="01 23 45 67 89" pattern="[0-9]{10}">
-        </div>
-      </div>
-
-      <div class="msg"> 
-        <label class="details">Message</label>
-        <textarea type="text" class="message" placeholder="Enter your main text here..."></textarea>
-      </div>
-
-      <div class="submitButton">Submit Form</div>
-    </form>
-  </div>
-
-  <div class="contact_info">
-    <p class="title">We'd Love To Hear From You.</p>
-    <p class="sub_title">
-      Or just reach out manually to 
-      <a href="#">spacex.exploration@contact.com</a>
-    </p>
-
-    <div class="container">
-      <div class="info_container">
-        <img src="images/email.png" alt="#" class="icon_">
-        <p class="mini_title">Email Support</p>
-        <p class="sub_title">Our team can respond in real time</p>
-        <p class="info"><a href="#">spacex.exploration@contact.com</a></p>
-      </div>
-
-      <div class="info_container">
-        <img src="images/office.png" alt="#" class="icon_">
-        <p class="mini_title">Visit Our Office</p>
-        <p class="sub_title">Visit our location in real life</p>
-        <p class="info"><a href="https://www.google.com/maps/place/4229+N+FM+620,+Austin,+TX+78734,+USA/@30.3955651,-97.9159239,17z/data=!3m1!4b1!4m6!3m5!1s0x865b30d89ba962c3:0x8dc3fb5b04818472!8m2!3d30.3955651!4d-97.9159239!16s%2Fg%2F11jb7pmv23?entry=ttu&g_ep=EgoyMDI1MTAwNi4wIKXMDSoASAFQAw%3D%3D">4229 North FM 620, Austin, TX 78734</a></p>
-      </div>
-
-      <div class="info_container">
-        <img src="images/phone.png" alt="#" class="icon_">
-        <p class="mini_title">Email Support</p>
-        <p class="sub_title">Available during working hours</p>
-        <p class="info"><a href="#">(+1)134-4567-789</a></p>
-      </div>
-
-    </div>
-
-
-  </div>
-
-</section>
 <!-- Footer -->
  <footer>
     <div class="container">

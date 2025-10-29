@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+    <title>SpaceOdyssey Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
     
@@ -21,20 +21,27 @@
     <div class="haut">
         <img src="images/home/Logo.png" alt="#" class="logo">
         <div class="right_side">
-            <div class="search">
-                <input type="text" placeholder="Search">
-                <img src="images/home/search.png" alt="">
-            </div>
-            <div class="language">
-                English
-            </div>
+            <select class="language">
+                <option value="English">English</option>
+                <option value="Français">Français</option>
+                <option value="العربية">العربية</option>
+            </select>
             <div class="notification">
                 <img src="images/home/bell.png" alt="no image">
                 <span>0</span>
             </div>
-            <img class="profile" src="images/home/profile.png" alt="#">   
+                <img class="profile" src="images/home/profile.png" alt="#"> 
+                <img class="burger_icon" src="images/burger_menu.png" alt="#">  
             </div>
-        </div>
+                <ul class="mobile_menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="mission.html">ABOUT Us</a></li>
+                    <li><a href="news.html">MISSIONS</a></li>
+                    <li><a href="catalog.html">PLANETS</a></li>
+                    <li><a href="login.html">CONTACT</a></li>
+                </ul>
+
+     </div>
         
     <div class="nav_bar">
         <ul>
@@ -56,7 +63,6 @@
     <div class="text">
         <p class="title">Space Odyssey</p>
         <p class="sub_title">Explore the wonders of the universe.<br/>Discover stars, planets, and galaxies like never before !</p>
-        <div><a href="#">Explore Space</a></div>
     </div>
   </section>
 <!-- section_2-->

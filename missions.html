@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="missions.css">
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <title>SpaceOdyssey Missions</title>
     <script src="missions.js"></script>
@@ -15,10 +16,6 @@
     <div class="haut">
         <img src="images/home/Logo.png" alt="#" class="logo">
         <div class="right_side">
-            <div class="search">
-                <input type="text" placeholder="Search">
-                <img src="images/home/search.png" alt="">
-            </div>
             <select class="language">
                 <option value="English">English</option>
                 <option value="Français">Français</option>
@@ -28,9 +25,17 @@
                 <img src="images/home/bell.png" alt="no image">
                 <span>0</span>
             </div>
-            <img class="profile" src="images/home/profile.png" alt="#">  
-            <img src="images/burger_menu.png" alt=""> 
+                <img class="profile" src="images/home/profile.png" alt="#">  
+                <img class="burger_icon" src="images/burger_menu.png" alt=""> 
             </div>
+            <ul class="mobile_menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="mission.html">ABOUT Us</a></li>
+                <li><a href="news.html">MISSIONS</a></li>
+                <li><a href="catalog.html">PLANETS</a></li>
+                <li><a href="login.html">CONTACT</a></li>
+            </ul>
+
     </div>
         
     <div class="nav_bar">
@@ -42,6 +47,8 @@
             <li><a href="about_us.html">ABOUT US</a></li>
             <li><a href="missions.html">MISSIONS</a></li>
             <li><a href="planets.html">PLANETS</a></li>
+            <li><a href="#" id="Add">ADD MISSION</a></li>
+            <li><a href="#" id="favorite">FAVORITE</a></li>
         </ul>
         <div><a href="contact.html">Contact Us</a></div>
         
@@ -60,102 +67,33 @@
     </div>
     <p>From Moon landings to deep-space exploration, each mission below reveals a new chapter in humanity’s quest to understand the cosmos.</p>
 </section>
-<section class="ms_cards">
-    <div class="card">
-        <img src="images/missions/apollo_11.jpg" alt="">
-        <div class="details">
-            <p class="name_m">A ppolo 11</p>
-            <p class="detail_m">First human landing on the Moon</p>
-            <p class="detail_m" style="width: 100%;">Launch date: July 16, 1969</p>
-            <span><a style="color: #6FB1FC;" href="#">NASA</a></span>
-        </div>
-    </div>
-    <!-- <div class="card">
-        <img src="images/missions/Curiosity.jpg" alt="">
-        <div class="details">
-            <p class="name_m">Curiosity</p>
-            <p class="detail_m">Explore Mars’ surface</p>
-            <p class="detail_m" style="width: 100%;">Launch date: November 26, 2011</p>
-            <span><a style="color: #6FB1FC;" href="#">NASA</a></span>
-        </div>
-    </div>
-    <div class="card">
-        <img src="images/missions/Artemis I.jpg" alt="">
-        <div class="details">
-            <p class="name_m">Artemis I</p>
-            <p class="detail_m">Prepare human return to the Moon</p>
-            <p class="detail_m" style="width: 100%;">Launch date: November 16, 2022</p>
-            <span><a style="color: #6FB1FC;" href="#">NASA</a></span>
-        </div>
-    </div>
-    <div class="card">
-        <img src="images/missions/James Webb Space Telescope.jpg" alt="">
-        <div class="details">
-            <p class="name_m">James Webb Space Telescope</p>
-            <p class="detail_m">Observe the origins of the universe</p>
-            <p class="detail_m" style="width: 100%;">Launch date: December 25, 2021</p>
-            <span><a style="color: #6FB1FC;" href="#">NASA / ESA / CSA</a></span>
-        </div>
-    </div>
-    <div class="card">
-        <img src="images/missions/Voyager 1.png" alt="">
-        <div class="details">
-            <p class="name_m">Voyager 1</p>
-            <p class="detail_m">Study the outer solar system</p>
-            <p class="detail_m" style="width: 100%;">Launch date: September 5, 1977</p>
-            <span><a style="color: #6FB1FC;" href="#">NASA</a></span>
-        </div>
-    </div>
-    <div class="card">
-        <img src="images/missions/Perseverance.jpg" alt="">
-        <div class="details">
-            <p class="name_m">Perseverance</p>
-            <p class="detail_m">Search for signs of life on Mars</p>
-            <p class="detail_m" style="width: 100%;">Launch date: July 30, 2020</p>
-            <span><a style="color: #6FB1FC;" href="#">NASA</a></span>
-        </div>
-    </div>
-    <div class="card">
-        <img src="images/missions/Rosetta.jpg" alt="">
-        <div class="details">
-            <p class="name_m">Rosetta</p>
-            <p class="detail_m">Study comet 67P/Churyumov–Gerasimenko</p>
-            <p class="detail_m" style="width: 100%;">Launch date: March 2, 2004</p>
-            <span><a style="color: #6FB1FC;" href="#">ESA</a></span>
-        </div>
-    </div>
-    <div class="card">
-        <img src="images/missions/Parker Solar Probe.jpg" alt="">
-        <div class="details">
-            <p class="name_m">Parker Solar Probe</p>
-            <p class="detail_m">Study the Sun’s corona</p>
-            <p class="detail_m" style="width: 100%;">Launch date: August 12, 2018</p>
-            <span><a style="color: #6FB1FC;" href="#">NASA</a></span>
-        </div>
-    </div>
-    <div class="card">
-        <img src="images/missions/Hubble Space Telescope.jpg" alt="">
-        <div class="details">
-            <p class="name_m">Hubble Space Telescope</p>
-            <p class="detail_m">Observe the universe from Earth’s orbit</p>
-            <p class="detail_m" style="width: 100%;">Launch date: April 24, 1990</p>
-            <span><a style="color: #6FB1FC;" href="#">NASA / ESA</a></span>
-        </div>
-    </div>
-    <div class="card">
-        <img src="images/missions/Tianwen-1.jpg" alt="">
-        <div class="details">
-            <p class="name_m">Tianwen-1</p>
-            <p class="detail_m">Explore Mars with orbiter and rover</p>
-            <p class="detail_m" style="width: 100%;">Launch date: July 23, 2020</p>
-            <span><a style="color: #6FB1FC;" href="#">CNSA (China)</a></span>
-        </div>
-    </div> -->
-</section>
+            <div class="search">
+                <input class="search_input" type="text" placeholder="Search">
+                <img src="images/home/search.png" alt="">
+            </div>
 
+<!------------------------------------------------------------------------------------->
 
+<section class="ms_cards"></section> <!-- the container of missions card -->
+<!------------------------------------------------------------------------------------->
 
- <footer>
+<div class="popUp_Add">
+    <input type="text" placeholder="name of the mission">
+    <input type="text" placeholder="description of the mission">
+    <input type="date" placeholder="lunching date">
+    <input type="file" accept="image/*">
+    <button style="padding: 5px 20px; background-color: brown; color: white;">ADD</button>
+</div>  
+<!------------------------------------------------------------------------------------->
+<div class="popUp_favorite">
+    <h1 class="fav_title">Favorite Missions</h1>
+    <img class="close_icon" src="images/close_icon.png" alt="">
+    <div class="favorite_list">
+        
+    </div>
+</div>
+<!------------------------------------------------------------------------------------->
+<footer>
     <div class="container">
         <table>
             <tr>

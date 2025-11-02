@@ -54,6 +54,7 @@
     margin: 80px;
 }
 .ms_cards .card{
+    position: relative;
     width: 420px;
     height: 500px;
     border: 1px solid black;
@@ -91,3 +92,48 @@
     font-family: "Abel", sans-serif;
     margin-bottom: 30px;
 }
+.material-icons{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+}
+/* .favory{color: red;} */
+.card.favorite .material-icons {color: red;}
+.popUp_favorite{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    background: white;
+    border: 1px solid ;
+    width: 800px;
+    height: 500px;
+    top: 150px;
+    left: 350px;
+    overflow: auto;
+    padding: 20px;
+}
+.popUp_favorite.show {display: flex;}
+.popUp_Add{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    background: goldenrod;
+    border: 1px solid pink;
+    width: 800px;
+    height: 500px;
+    top: 150px;
+    left: 350px;
+    padding: 20px;
+}
+.popUp_Add.show {display: block; }
+.fav_title{text-decoration: underline;}
+.close_icon{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 92%;
+    cursor: pointer;
+}
+
+

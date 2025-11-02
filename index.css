@@ -16,7 +16,7 @@ a {text-decoration: none;}
 .header{
     width: 100%;
     height: auto;
-    position: fixed;
+    /* position: fixed; */
     z-index: 10;
 }
 
@@ -44,9 +44,9 @@ a {text-decoration: none;}
     color: white;
     display: flex;
     border-radius: 5px;
-    background: white;
+    background: rgb(203, 113, 113);
 }
-.search input {border-radius: 5px 0 0 5px; width: 180px; border: none;}
+.search input {border-radius: 5px 0 0 5px; width: 180px; border: none; background: rgb(203, 113, 113);}
 .search input::placeholder {padding: 20px;}
 .search img { margin: 3px;} 
 .language {
@@ -103,6 +103,8 @@ a {text-decoration: none;}
     text-align: center;
     align-content: center;
 }
+.nav_bar li a:hover{color: black; font-weight: 900;}
+.nav_bar li:last-child a:hover {color: red;}
 .nav_bar a {color: rgb(139, 136, 136);}
 .nav_bar ul li.media {width: 40px;}
 .nav_bar div {

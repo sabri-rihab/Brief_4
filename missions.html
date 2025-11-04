@@ -77,20 +77,21 @@
 <section class="ms_cards"></section> <!-- the container of missions card -->
 <!------------------------------------------------------------------------------------->
 
-<div class="popUp_Add">
-    <input type="text" placeholder="name of the mission">
-    <input type="text" placeholder="description of the mission">
-    <input type="date" placeholder="lunching date">
-    <input type="file" accept="image/*">
-    <button style="padding: 5px 20px; background-color: brown; color: white;">ADD</button>
+<div class="popUp_Add">   <!--  add form  -->
+    <img class="close_icon" src="images/close_icon.png" alt="">
+    <input id="new_name" type="text" placeholder="name of the mission">
+    <input id="new_dsc" type="text" placeholder="description of the mission">
+    <input id="new_date" type="date" placeholder="lunching date">
+    <input id="new_agency" type="text" placeholder="agency">
+    <input id="new_img" type="file" accept="image/*">
+    <button id="add_btn" style="padding: 5px 20px; background-color: brown; color: white;">ADD</button>
+    <button id="edit_btn" style="padding: 5px 20px; background-color: brown; color: white;">edit</button>
 </div>  
 <!------------------------------------------------------------------------------------->
-<div class="popUp_favorite">
+<div class="popUp_favorite">  <!-- handel favorites  -->
     <h1 class="fav_title">Favorite Missions</h1>
     <img class="close_icon" src="images/close_icon.png" alt="">
-    <div class="favorite_list">
-        
-    </div>
+    <div class="favorite_list"></div>
 </div>
 <!------------------------------------------------------------------------------------->
 <footer>

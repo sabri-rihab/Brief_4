@@ -103,6 +103,7 @@
 .popUp_favorite{
     position: fixed;
     display: none;
+    flex-wrap: wrap;
     justify-content: center;
     background: white;
     border: 1px solid ;

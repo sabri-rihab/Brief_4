@@ -66,22 +66,29 @@
               <div class="form-group">
                 <label for="firstName">First Name</label>
                 <input type="text" id="firstName" name="firstName" required />
+                <span class="error" id="firstNameError"></span>
               </div>
               <div class="form-group">
                 <label for="lastName">Last Name</label>
                 <input type="text" id="lastName" name="lastName" required />
+                <span class="error" id="lastNameError"></span>
               </div>
             </div>
 
             <div class="form-row">
+
               <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required />
+                <span class="error" id="emailError"></span>
               </div>
+
               <div class="form-group">
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" required />
+                <span class="error" id="phoneError"></span>
               </div>
+
             </div>
 
             <div class="subject-group">
@@ -135,6 +142,7 @@
                 placeholder="Write your message.."
                 required
               ></textarea>
+              <span class="error" id="messageError"></span>
             </div>
 
             <button type="submit" class="submit-btn">Send Message</button>
@@ -189,6 +197,6 @@
     </div>
 </footer>
 
-
+<script src="contact.js"></script>
 </body>
 </html>

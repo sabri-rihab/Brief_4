@@ -52,7 +52,7 @@
     "name": "Tianwen-1",
     "agency": "CNSA",
     "objective": "Explore Mars with orbiter and rover",
-    "launchDate": "23-07-2020",
+    "launchDate": "2020-07-23",
     "image": "images/missions/Tianwen-1.jpg"
   },
   {
@@ -60,7 +60,7 @@
     "name": "Perseverance",
     "agency": "NASA",
     "objective": "Search for signs of life on Mars",
-    "launchDate": "30-07-2020",
+    "launchDate": "2020-07-30",
     "image": "images/missions/Perseverance.jpg"
   },
   {
@@ -68,7 +68,7 @@
     "name": "Parker Solar Probe",
     "agency": "NASA",
     "objective": "Study the Sun’s corona",
-    "launchDate": "12-08-2018",
+    "launchDate": "2018-08-12",
     "image": "images/missions/Parker Solar Probe.jpg"
   },
   {
@@ -76,7 +76,7 @@
     "name": "Hubble Space Telescope",
     "agency": "NASA",
     "objective": "Study the Sun’s corona",
-    "launchDate": "12-08-2018",
+    "launchDate": "2031-08-12",
     "image": "images/missions/Hubble Space Telescope.jpg"
   }
 ]

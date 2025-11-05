@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="missions.css">
-    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <title>SpaceOdyssey Missions</title>
     <script src="missions.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
+
 <body>
-     <div class="header">
-    <div class="haut">
-        <img src="images/home/Logo.png" alt="#" class="logo">
-        <div class="right_side">
-            <select class="language">
-                <option value="English">English</option>
-                <option value="Français">Français</option>
-                <option value="العربية">العربية</option>
-            </select>
-            <div class="notification">
-                <img src="images/home/bell.png" alt="no image">
-                <span>0</span>
-            </div>
-                <img class="profile" src="images/home/profile.png" alt="#">  
-                <img class="burger_icon" src="images/burger_menu.png" alt=""> 
+    <div class="header">
+        <div class="haut">
+            <img src="images/home/Logo.png" alt="#" class="logo">
+            <div class="right_side">
+                <select class="language">
+                    <option value="English">English</option>
+                    <option value="Français">Français</option>
+                    <option value="العربية">العربية</option>
+                </select>
+                <div class="notification">
+                    <img src="images/home/bell.png" alt="no image">
+                    <span>0</span>
+                </div>
+                <img class="profile" src="images/home/profile.png" alt="#">
+                <img class="burger_icon" src="images/burger_menu.png" alt="">
             </div>
             <ul class="mobile_menu">
                 <li><a href="index.html">HOME</a></li>
@@ -36,108 +43,158 @@
                 <li><a href="login.html">CONTACT</a></li>
             </ul>
 
-    </div>
-        
-    <div class="nav_bar">
-        <ul>
-            <li class="media"><a href="#"><img src="images/home/instagram.png" alt=""></a></li>
-            <li class="media"><a href="#"><img src="images/home/x.png" alt=""></a></li>
-            <li class="media" style="margin-right: 60px;"><a href=""><img src="images/home/Be.png" alt=""></a></li>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about_us.html">ABOUT US</a></li>
-            <li><a href="missions.html">MISSIONS</a></li>
-            <li><a href="planets.html">PLANETS</a></li>
-            <li><a href="#" id="Add">ADD MISSION</a></li>
-            <li><a href="#" id="favorite">FAVORITE</a></li>
-        </ul>
-        <div><a href="contact.html">Contact Us</a></div>
-        
-    </div>
- </div>
-<section class="ms_1">
-    <div class="m_text">
-        <p style="font-size: 50px;">Discover the Greatest Space Missions in History</p>
-        <p style="font-size: 30px;">From Apollo to Artemis — explore humanity’s path among the stars.</p>
-    </div>
-</section>
-<section class="ms_2">
-    <div>
-        <img src="images/missions/Group 137.png" alt="">
-        <span style="font-size: 20px;font-weight: 600;">Discover</span>
-    </div>
-    <p>From Moon landings to deep-space exploration, each mission below reveals a new chapter in humanity’s quest to understand the cosmos.</p>
-</section>
-            <div class="search">
-                <input class="search_input" type="text" placeholder="Search">
-                <img src="images/home/search.png" alt="">
-            </div>
-
-<!------------------------------------------------------------------------------------->
-
-<section class="ms_cards"></section> <!-- the container of missions card -->
-<!------------------------------------------------------------------------------------->
-
-<div class="popUp_Add">   <!--  add form  -->
-    <img class="close_icon" src="images/close_icon.png" alt="">
-    <input id="new_name" type="text" placeholder="name of the mission">
-    <input id="new_dsc" type="text" placeholder="description of the mission">
-    <input id="new_date" type="date" placeholder="lunching date">
-    <input id="new_agency" type="text" placeholder="agency">
-    <input id="new_img" type="file" accept="image/*">
-    <button id="add_btn" style="padding: 5px 20px; background-color: brown; color: white;">ADD</button>
-    <button id="edit_btn" style="padding: 5px 20px; background-color: brown; color: white;">edit</button>
-</div>  
-<!------------------------------------------------------------------------------------->
-<div class="popUp_favorite">  <!-- handel favorites  -->
-    <h1 class="fav_title">Favorite Missions</h1>
-    <img class="close_icon" src="images/close_icon.png" alt="">
-    <div class="favorite_list"></div>
-</div>
-<!------------------------------------------------------------------------------------->
-<footer>
-    <div class="container">
-        <table>
-            <tr>
-                <th>Legal</th>
-                <th>Information</th>
-                <th>Company</th>
-            </tr>
-            <tr>
-                <td>Terms of Service</td>
-                <td>FAQ</td>
-                <td>About us</td>
-            </tr>
-            <tr>
-                <td>Privacy Policy</td>
-                <td>Blog</td>
-                <td>Careers</td>
-            </tr>
-            <tr>
-                <td>Cookies</td>
-                <td>Support</td>
-                <td>Contact us</td>
-            </tr>
-        </table>
-        <div class="subscription">
-            <span>Subscription</span>
-            <input type="email" placeholder="Email Adress">
         </div>
-        <hr>
-        <div class="sub_container">
-            <img class="logo" src="images/home/Logo.png" alt="#">
+
+        <div class="nav_bar">
             <ul>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Cookies</a></li>
+                <li class="media"><a href="#"><img src="images/home/instagram.png" alt=""></a></li>
+                <li class="media"><a href="#"><img src="images/home/x.png" alt=""></a></li>
+                <li class="media" style="margin-right: 60px;"><a href=""><img src="images/home/Be.png" alt=""></a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about_us.html">ABOUT US</a></li>
+                <li><a href="missions.html">MISSIONS</a></li>
+                <li><a href="planets.html">PLANETS</a></li>
+                <li><a href="#" id="Add">ADD MISSION</a></li>
+                <li><a href="#" id="favorite">FAVORITE</a></li>
             </ul>
-            <div class="social_media">
-                <a href="#"><img src="images/home/linkedin.png" alt=""></a>
-                <a href="#"><img src="images/home/facebook.png" alt=""></a>
-                <a href="#"><img src="images/home/twitter.png" alt=""></a>
-            </div>
+            <div><a href="contact.html">Contact Us</a></div>
+
         </div>
     </div>
-</footer>
+    <section class="ms_1">
+        <div class="m_text">
+            <p style="font-size: 50px;">Discover the Greatest Space Missions in History</p>
+            <p style="font-size: 30px;">From Apollo to Artemis — explore humanity’s path among the stars.</p>
+        </div>
+    </section>
+    <section class="ms_2">
+        <div>
+            <img src="images/missions/Group 137.png" alt="">
+            <span style="font-size: 20px;font-weight: 600;">Discover</span>
+        </div>
+        <p>From Moon landings to deep-space exploration, each mission below reveals a new chapter in humanity’s quest to
+            understand the cosmos.</p>
+    </section>
+    <!------------------filters-------------------------->
+<div class="filters">
+        <div class="search">
+            <input class="search_input" type="text" placeholder="search">
+            <img src="images/home/search.png" alt="" onerror="this.style.display='none'">
+        </div>
+
+        <div class="filter-controls">
+            <div class="filter-selects">
+                <select id="select_agency">
+                    <option value="">select agency</option>
+                    <option value="NASA">NASA</option>
+                    <option value="ESA">ESA</option>
+                    <option value="Roscosmos">Roscosmos</option>
+                    <option value="CNSA">CNSA</option>
+                    <option value="ISRO">ISRO</option>
+                    <option value="JAXA">JAXA</option>
+                    <option value="CSA">CSA</option>
+                    <option value="UK Space Agency">UK Space Agency</option>
+                    <option value="DLR">DLR</option>
+                </select>
+                <select id="select_date">
+                    <option value="">select date</option>
+                    <option value="before_2000">Before 2000s</option>
+                    <option value="in_2000s">between 2000&2030</option>
+                    <option value="after_2030">After 2030s</option>
+                </select>
+            </div>
+            <a href="#" class="clear-filter">clear Filter</a>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------------->
+
+    <section class="ms_cards"></section> <!-- the container of missions card -->
+    <!------------------------------------------------------------------------------------->
+
+<div class="popUp_Add">
+        <img class="close_icon" src="images/close_icon.png" alt="">
+
+        <input id="new_name" type="text" placeholder="Type your mission name">
+        <input id="new_dsc" type="text" placeholder="Type your mission objective">
+        
+        <div class="form-row">
+            <select id="select_agency">
+                <option value="">missions agency</option>
+                <option value="NASA">NASA</option>
+                <option value="ESA">ESA</option>
+                <option value="Roscosmos">Roscosmos</option>
+                <option value="CNSA">CNSA</option>
+                <option value="ISRO">ISRO</option>
+                <option value="JAXA">JAXA</option>
+                <option value="CSA">CSA</option>
+                <option value="UK Space Agency">UK Space Agency</option>
+                <option value="DLR">DLR</option>
+            </select>
+            <input id="new_date" type="date" placeholder="mission's lunching date">
+        </div>
+
+        <div class="file-input-wrapper">
+            <input id="new_img" type="file" accept="image/*">
+        </div>
+
+        <div class="button-container">
+            <button id="add_btn">Add</button>
+            <button id="edit_btn">Edit</button>
+        </div>
+    </div>
+        <!------------------------------------------------------------------------------------->
+    <div class="popUp_favorite"> <!-- handel favorites  -->
+        <button id="btn_download">Download</button>
+        <h1 class="fav_title">Favorite Missions</h1>
+        <img class="close_icon" src="images/close_icon.png" alt="">
+        <div class="favorite_list" id="favorite_list"></div>
+    </div>
+    <!------------------------------------------------------------------------------------->
+    <footer>
+        <div class="container">
+            <table>
+                <tr>
+                    <th>Legal</th>
+                    <th>Information</th>
+                    <th>Company</th>
+                </tr>
+                <tr>
+                    <td>Terms of Service</td>
+                    <td>FAQ</td>
+                    <td>About us</td>
+                </tr>
+                <tr>
+                    <td>Privacy Policy</td>
+                    <td>Blog</td>
+                    <td>Careers</td>
+                </tr>
+                <tr>
+                    <td>Cookies</td>
+                    <td>Support</td>
+                    <td>Contact us</td>
+                </tr>
+            </table>
+            <div class="subscription">
+                <span>Subscription</span>
+                <input type="email" placeholder="Email Adress">
+            </div>
+            <hr>
+            <div class="sub_container">
+                <img class="logo" src="images/home/Logo.png" alt="#">
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+                <div class="social_media">
+                    <a href="#"><img src="images/home/linkedin.png" alt=""></a>
+                    <a href="#"><img src="images/home/facebook.png" alt=""></a>
+                    <a href="#"><img src="images/home/twitter.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
+
 </html>

@@ -70,8 +70,8 @@ async function loadMissions() {
                 <p class="detail_m">${mission.objective}</p>
                 <p class="detail_m" style="width: 100%;">${mission.launchDate}</p>
                 <span><a style="color: #6FB1FC;" href="#">${mission.agency}</a></span>
-                <button style="background: yellow; width:100px;" class="btn_edit">Edit</button>
-                <button style="color: red;" class="btn_delete">Delete</button>
+                <button  class="btn_edit">Edit</button>
+                <button class="btn_delete">Delete</button>
               </div>
             </div>`
         )

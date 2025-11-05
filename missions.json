@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "Apollo 11",
+    "name": "Apollo 11  ",
     "agency": "NASA",
-    "objective": "Premier alunissage habité",
+    "objective": "Premier alunissage habité  ",
     "launchDate": "1969-07-16",
     "image": "images/missions/apollo_11.jpg"
   },

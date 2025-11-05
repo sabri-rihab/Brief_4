@@ -450,3 +450,57 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 .detailsFav .remove:hover {
   background: #ff9999;
 }
+
+
+
+
+
+
+
+
+/* button style*/
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.btn_edit, .btn_delete {
+  flex: 1;
+  padding: 3px 10px;
+  width: 20px;
+  margin: 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.btn_edit {
+  background: #ffd700;
+  color: #333;
+}
+
+.btn_edit:hover {
+  background: #ffed4e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+}
+
+.btn_delete {
+  background: #ff4444;
+  color: white;
+}
+
+.btn_delete:hover {
+  background: #ff6666;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 68, 68, 0.3);
+}
+
+.btn_edit:active, .btn_delete:active {
+  transform: translateY(0);
+}
